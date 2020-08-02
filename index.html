@@ -10,6 +10,9 @@
 
 	<!-- Estilo -->
 	<link rel="stylesheet" href="/css/style.css">
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 	
 </head>
 <body>
@@ -22,15 +25,25 @@
 							<img src="/svg/LOGO.svg" alt="logo">
 						</a>
 					</div>
-	
-					<nav class="navbar">
-						<ul>
+
+					<nav>
+						<ul class="navbar active">
 							<li><a href="#sobre">Sobre</a></li>
 							<li><a href="#skills">Skills</a></li>
 							<li><a href="#laboratorio">Laboratório</a></li>
 							<li><a href="#contato">Contato</a></li>
 						</ul>
 					</nav>
+
+					<!-- Menu hamburguer -->
+
+					<div class="menu-hamburguer">
+						<input id="hamburguer" type="checkbox" style="display: none;">
+
+						<label for="hamburguer">
+							<div class="hamburguer active"></div>
+						</label>
+					</div>
 				</div>
 			</div>
 			
@@ -92,7 +105,7 @@
 		<div class="icons-skills">
 			<div class="skill-item">
 				<p>HTML</p>
-				<img src="/icons/html.svg" alt="skill1">
+				<img class="tamanho-icon" src="/icons/html.svg" alt="skill1">
 
 				<div class="barrinha">
 					<div class="laranja"></div>
@@ -101,7 +114,7 @@
 
 			<div class="skill-item">
 				<p>CSS</p>
-				<img src="/icons/css.svg" alt="skill2">
+				<img class="tamanho-icon" src="/icons/css.svg" alt="skill2">
 
 				<div class="barrinha">
 					<div class="azul"></div>
@@ -110,7 +123,7 @@
 
 			<div class="skill-item">
 				<p>NODE.JS</p>
-				<img src="/icons/icons8-nodejs.svg" alt="skill3">
+				<img class="tamanho-icon" src="/icons/icons8-nodejs.svg" alt="skill3">
 
 				<div class="barrinha">
 					<div class=verde-escuro></div>
@@ -119,7 +132,7 @@
 
 			<div class="skill-item">
 				<p>MONGODB</p>
-				<img src="/icons/icons8-mongodb.svg" alt="skill4">
+				<img class="tamanho-icon" src="/icons/icons8-mongodb.svg" alt="skill4">
 
 				<div class="barrinha">
 					<div class="verde-claro"></div>
@@ -128,7 +141,7 @@
 
 			<div class="skill-item">
 				<p>JAVASCRIPT</p>
-				<img src="/icons/logos_javascript.svg" alt="skill5">
+				<img class="tamanho-icon" src="/icons/logos_javascript.svg" alt="skill5">
 
 				<div class="barrinha">
 					<div class="amarelo"></div>
@@ -137,7 +150,7 @@
 
 			<div class="skill-item">
 				<p>FIGMA</p>
-				<img src="/icons/figma.svg" alt="skill6">
+				<img class="tamanho-icon" src="/icons/figma.svg" alt="skill6">
 
 				<div class="barrinha">
 					<div class="lilas"></div>
@@ -161,15 +174,16 @@
 				</div>
 
 				<div class="card-hover">
-					<h3></h3>
-					<p></p>
+					<h3>WebSite - Marketing Digital</h3>
+					<p>Um wehsite feito para uma agência de marketing, com um banner itnerativo.</p>
 					<div class="tecnologias">
 						<ul>
-							<ul></ul>
-							<ul></ul>
-							<ul></ul>
+							<li>HTML</li>
+							<li>CSS</li>
 						</ul>
 					</div>
+
+					<a class="botao-acessar" href="https://github.com/droid-janderson/digital-marketing" class="acessar">Acessar</a>
 				</div>
 			</div>
 	
@@ -183,15 +197,18 @@
 				</div>
 				
 				<div class="card-hover">
-					<h3></h3>
-					<p></p>
+					<h3>WebSite - Replica Facebook</h3>
+					<p>Um wehsite feito para uma agência de marketing, com um banner itnerativo.</p>
 					<div class="tecnologias">
 						<ul>
-							<ul></ul>
-							<ul></ul>
-							<ul></ul>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>Grid Layout</li>
+							<li>FlexBox</li>
 						</ul>
 					</div>
+
+					<a class="botao-acessar" href="https://github.com/droid-janderson/Replica-pagina-login-facebook" class="acessar">Acessar</a>
 				</div>
 			</div>
 			
@@ -205,15 +222,17 @@
 				</div>
 				
 				<div class="card-hover">
-					<h3></h3>
-					<p></p>
+					<h3>WebSite - Flexblog</h3>
+					<p>Um wehsite feito para uma agência de marketing, com um banner itnerativo.</p>
 					<div class="tecnologias">
 						<ul>
-							<ul></ul>
-							<ul></ul>
-							<ul></ul>
+							<li>HTML</li>
+							<li>CSS</li>
+							<li>FlexBox Layout</li>
 						</ul>
 					</div>
+
+					<a class="botao-acessar" href="https://github.com/droid-janderson/flex-blog" class="acessar">Acessar</a>
 				</div>
 			</div>
 		</div>
@@ -226,32 +245,36 @@
 		<p>Estou disponível todos os dias.</p>
 
 		<div class="contato-container">
-			<div class="contato-info">
-				<div class="img-contato">
-					<img src="/svg/telefone.svg" alt="telefone">
+			<div class="contato-container1">
+				<div class="contato-info">
+					<div class="img-contato">
+						<img src="/svg/telefone.svg" alt="telefone">
+					</div>
+					<a href="tel:+5589988215886">(89) 98821-5886</a>
 				</div>
-				<a href="tel:+5589988215886">(89) 98821-5886</a>
+
+				<div class="contato-info">
+					<div class="img-contato">
+						<img src="/svg/ant-design_github-filled.svg" alt="github">
+					</div>
+					<a href="https://github.com/droid-janderson/" target="_blank">https://github.com/droid-janderson/</a>
+				</div>
 			</div>
 
-			<div class="contato-info">
-				<div class="img-contato">
-					<img src="/svg/ant-design_github-filled.svg" alt="github">
+			<div class="contato-container2">
+				<div class="contato-info">
+					<div class="img-contato">
+						<img src="/svg/ion_mail-outline.svg" alt="e-mail">
+					</div>
+					<a href="mailto:jandersonbrito72@gmail.com" target="_blank">jandersonbrito72@gmail.com</a>
 				</div>
-				<a href="https://github.com/droid-janderson/" target="_blank">https://github.com/droid-janderson/</a>
-			</div>
-
-			<div class="contato-info">
-				<div class="img-contato">
-					<img src="/svg/ion_mail-outline.svg" alt="e-mail">
+	
+				<div class="contato-info">
+					<div class="img-contato">
+						<img src="/svg/ant-design_linkedin-outlined.svg" alt="linkedin">
+					</div>
+					<a href="https://www.linkedin.com/in/janderson-brito/" target="_blank">https://www.linkedin.com/in/janderson-brito/</a>
 				</div>
-				<a href="mailto:jandersonbrito72@gmail.com" target="_blank">jandersonbrito72@gmail.com</a>
-			</div>
-
-			<div class="contato-info">
-				<div class="img-contato">
-					<img src="/svg/ant-design_linkedin-outlined.svg" alt="linkedin">
-				</div>
-				<a href="https://www.linkedin.com/in/janderson-brito/" target="_blank">https://www.linkedin.com/in/janderson-brito/</a>
 			</div>
 		</div>
 	</section>
@@ -260,5 +283,7 @@
 		<p>	© 2020 Janderson Brito - Design by <span>Lavínia Melo</span></p>
 	</footer>
 	
+	<!-- JavaScript -->
+	<script src="/js/ativarMenu.js"></script>
 </body>
 </html>
