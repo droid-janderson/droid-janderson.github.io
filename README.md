@@ -1,6 +1,3 @@
-## Logo do Projeto
-![logo screen](https://github.com/droid-janderson/droid-janderson.github.io/blob/master/svg/LOGO.svg)
-
 ## Nome do Projeto
 Portifólio pessoal
 
