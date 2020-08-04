@@ -677,7 +677,7 @@ div.card:hover > .card-hover {
 
 /* Tablet */
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 960px) {
 	/* header */
 	.menu {
 		max-width: 860px;
@@ -749,7 +749,7 @@ div.card:hover > .card-hover {
 
 /* Mobile */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 720px) {
 	.menu {
 		max-width: 530px;
 	}
@@ -803,7 +803,12 @@ div.card:hover > .card-hover {
 	}
 
 	.banner-info {
+
 		margin-left: 10px;
+	}
+
+	.banner-info p {
+		margin-right: 20px;
 	}
 
 	.banner-info a {
@@ -842,6 +847,10 @@ div.card:hover > .card-hover {
 		align-self: center;
 	}
 
+	.sobre-info p {
+		margin-right: 15px;
+	}
+
 	/* skills */
 
 	.skills {
@@ -857,6 +866,10 @@ div.card:hover > .card-hover {
 	.laboratorio {
 		max-width: 530px;
 		padding-right: 0px;
+	}
+
+	.tecnologias li {
+		margin-left: 10px;
 	}
 
 	.card {
@@ -876,7 +889,7 @@ div.card:hover > .card-hover {
 
 	.contato p {
 		text-align: center;
-		margin-bottom: 20px;
+		margin: 0 10px 20px 10px;
 	}
 
 	.contato-container {
@@ -886,6 +899,10 @@ div.card:hover > .card-hover {
 	.contato-container a {
 		font-size: var(--pequena);
 		max-width: 200px;
+	}
+
+	.rodape p {
+		font-size: var(--pequena);
 	}
 
 }
