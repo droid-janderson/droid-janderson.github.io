@@ -110,11 +110,11 @@ body {
 
 .logo img {
 	width: 250px;
-	transition: .5s ease;
+	transition: .5s ease-in;
 }
 
 .logo:hover {
-	width: 300px;
+	width: 280px;
 }
 
 .navbar {
